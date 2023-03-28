@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook-Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="logo multiple-text">
+                
+            </h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass fa-bounce fa-lg" style="color: #0400ff;"></i>
+                <input type="search" name="" id="" placeholder="Search-Here">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="#create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="images/blue-log.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- -------------------MAIN---------------- -->
+    <main>
+        <div class="container">
+            <!-- left -->
+            <div class="left">
+                <a href="#" class="profile">
+                    <div class="profile-photo">
+                        <img src="images/purple-logo.jpeg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h3>
+                            Elayat
+                        </h3>
+                        <p class="text-bold">Elzayat</p>
+                    </div>
+                </a>
+                <!-- ------SideBar-------- -->
+                <div class="sidebar">
+                    <a href="#" class="menu-item active">
+                        <span><i class="fa-solid fa-house fa-bounce fa-lg icon-icon"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-brands fa-internet-explorer fa-bounce fa-lg icon-icon"></i>
+                        </span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a href="#" class="menu-item" id="notifications"><span><i
+                                class="fa-solid fa-bell fa-shake fa-lg icon-icon"></i><small
+                                class="notifications-count">+9</small>
+                        </span>
+                        <h3>Notifications</h3>
+                        <!-- ----------Notifications popup------------- -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/A-Purple.jpeg" alt="">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>AbdallhELzayat</b>Accepted your frind request
+                                    <small class="text-muted">2Days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/A-Purple.jpeg" alt="">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>AbdallhELzayat</b>Accepted your frind request
+                                    <small class="text-muted">2Days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/A-Purple.jpeg" alt="">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>AbdallhELzayat</b>Accepted your frind request
+                                    <small class="text-muted">2Days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/A-Purple.jpeg" alt="">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>AbdallhELzayat</b>Accepted your frind request
+                                    <small class="text-muted">2Days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/A-Purple.jpeg" alt="">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>AbdallhELzayat</b>Accepted your frind request
+                                    <small class="text-muted">2Days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/A-Purple.jpeg" alt="">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>AbdallhELzayat</b>Accepted your frind request
+                                    <small class="text-muted">2Days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----------Notifications popup------------- -->
+                    </a>
+                    <a href="#" class="menu-item" id="message-notifications">
+                        <span><i class="fa-regular fa-comment fa-flip fa-lg icon-icon"></i><small
+                                class="notifications-count">+6</small>
+                        </span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-bookmark fa-beat-fade fa-lg icon-icon"></i>
+                        </span>
+                        <h3>Bookmark</h3>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-chart-simple fa-flip fa-lg icon-icon"></i>
+                        </span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="#" class="menu-item" id="theme">
+                        <span><i class="fa-solid fa-paint-roller fa-bounce fa-lg icon-icon"></i>
+                        </span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-sharp fa-solid fa-gear fa-bounce fa-lg icon-icon"></i>
+                        </span>
+                        <h3>Setting</h3>
+                    </a>
+                </div>
+                <!-- ----------------------------
+                --------------sidebar----------->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!-- ----------------------------
+                --------------END left----------->
+            <!-- middle -->
+            <div class="middle">
+                <!-- ----------------------------
+                --------------stories----------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                        <p class="name">Elsayed-Chelese</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/9.jpeg" alt="">
+                        </div>
+                        <p class="name"> Abdallh Elzayat</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/3.jpeg" alt="">
+                        </div>
+                        <p class="name">Hamdy Mohamed</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/blue-log.jpeg" alt="">
+                        </div>
+                        <p class="name">Salma Hesam</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/4.jpeg" alt="">
+                        </div>
+                        <p class="name">Abdallh ElAtrosh</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/5.jpeg" alt="">
+                        </div>
+                        <p class="name">Mohamed Amjad</p>
+                    </div>
+                </div>
+                <!-- ----------------------------
+                --------------stories----------->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="images/8.jpeg" alt="">
+                    </div>
+                    <input type="text" placeholder="What son your mind ?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <!-- stories -->
+                <!-- ----------------------------
+                --------------feeds----------->
+                <div class="feeds">
+                    <!-- feed -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>HamdyMohamed</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/blue-log.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Osama Mohamed</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/purple-logo.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/progects2.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/progects3.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/mylogo.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/story2.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/5.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/blue-log.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/img-9.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/img-8.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/img-6.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/img-5.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/img-4.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/IMG-0.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/blue-log.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>AbdallhELzayat</h3>
+                                    <small>online After 15,Minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/img-1.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/img-1.jpg" alt=""></span>
+                            <span><img src="images/img-4.jpeg" alt=""></span>
+                            <span><img src="images/img-8.jpeg" alt=""></span>
+                            <span><img src="images/img-6.jpg" alt=""></span>
+                            <span><img src="images/IMG-0.jpg" alt=""></span>
+                            <p>Liked by <b>Mostafa Megahed</b> and <b>158 other</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Abdallh</b> Lorem ipsum dolor sit amet consectetur
+                                adipisicing. <span class="hash-tag">
+                                    @Mostafa
+                                </span></p>
+                        </div>
+                        <div class="comment text-bold">
+                            View all 150 comments
+                        </div>
+                    </div>
+                    <!-- feed -->
+                </div>
+
+                <!---=-------------feeds----------->
+
+            </div>
+
+            <!----------------Middle----------->
+            <!-- right -->
+            <div class="right">
+                <!-- main MESSAGES -->
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <!-- search Bar -->
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="message-search" placeholder="Message-Search">
+                    </div>
+                    <!-- search Bar -->
+                    <!-- MESSAGE Category -->
+                    <div class="category">
+                        <h6 class="active">primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-request">Requests(7)</h6>
+                    </div>
+                    <!-- MESSAGE Category -->
+                    <!-- MESSAGE -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/purple-logo.jpeg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>AbdallhELzayat</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/img-6.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>AbdallhELzayat</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/img-4.jpeg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>HamdyMohamed</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/img-9.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Hamoda</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/img-5.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Hamoda</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/img-1.jpg" alt="">
+
+                        </div>
+                        <div class="message-body">
+                            <h5>AbuElenein</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/13.jpeg" alt="">
+
+                        </div>
+                        <div class="message-body">
+                            <h5>Mohamed Amjad</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/IMG-0.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Magdey Elsayad</h5>
+                            <p class="text-muted">Just work up bruh</p>
+                        </div>
+                    </div>
+                    <!-- MESSAGE -->
+                </div>
+                <!-- main MESSAGES -->
+                <!-- frind request -->
+                <div class="frind-requests">
+                    <h4>Request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/13.jpeg" alt="">
+                            </div>
+                            <div>
+                                <h5>Mohamed Ali</h5>
+                                <p>
+                                    12 mutual Friend
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/blue-log.jpeg" alt="">
+                            </div>
+                            <div>
+                                <h5>Ali Elzayat</h5>
+                                <p>
+                                    22 mutual Friend
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/purple-logo.jpeg" alt="">
+                            </div>
+                            <div>
+                                <h5>Mohamed Elzayat</h5>
+                                <p>
+                                    8 mutual Friend
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/A-Purple.jpeg" alt="">
+                            </div>
+                            <div>
+                                <h5>MAGIA</h5>
+                                <p>
+                                    150 mutual Friend
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- frind request  -->
+            </div>
+            <!-- right -->
+
+            <!--============ THEME customizeation
+            ======================================= -->
+            <div class="customize-theme">
+                <div class="card">
+                    <h2>customize Your Theme</h2>
+                    <p>Mange Your BackGround and Colors</p>
+                    <!-- fontsize -->
+                    <div class="font-size">
+                        <h4>FontSize</h4>
+                        <div>
+                            <h6>Aa</h6>
+                            <div class="choose-size">
+                                <span class="font-size-1"></span>
+                                <span class="font-size-2 active"></span>
+                                <span class="font-size-3"></span>
+                                <span class="font-size-4"></span>
+                                <span class="font-size-5"></span>
+                            </div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+                    <!-- fontsize -->
+                    <!-- primary Color -->
+                    <div class="colors">
+                        <h4>Colors</h4>
+                        <div class="choose-color">
+                            <span class="color-1 active"></span>
+                            <span class="color-2"></span>
+                            <span class="color-3"></span>
+                            <span class="color-4"></span>
+                            <span class="color-5"></span>
+                        </div>
+                    </div>
+                    <!-- primary Color -->
+                    <!-- backGround -->
+                    <div class="background">
+                        <h4>Background</h4>
+                        <div class="choose-bg">
+                            <div class="bg-1 active">
+                                <span></span>
+                                <h5 for="bg-1">Light</h5>
+                            </div>
+                            <div class="bg-2">
+                                <span></span>
+                                <h5>Dim</h5>
+                            </div>
+                            <div class="bg-3">
+                                <span></span>
+                                <h5 for="bg-3">Lights Out</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- backGround -->
+                </div>
+            </div>
+            <!--============ THEME customizeation
+            ======================================= -->
+        </div>
+    </main>
+    <!-- -------------------MAIN---------------- -->
+    <!-- type js -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <!-- type js -->
+    <!-- Wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
